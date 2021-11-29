@@ -30,3 +30,8 @@ steps:
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)'
     artifactName: 'myWebsiteName'
+
+#- script: dotnet pack /p:PackageVersion=$(version)
+#- task: NuGetAuthenticate@0
+ # input:
+  #  nuGetServiceConnections:
