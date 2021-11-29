@@ -12,13 +12,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
-steps: 
-- task : DotNetCoreCLI@2
-  inputs:
-    command: 'test'
-    project: '**/*Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration) --colect "Code coverage"'
-    
+steps:     
 - task: DotNetCoreCLI@2
   inputs: 
     command: 'restore'
